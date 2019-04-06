@@ -1,11 +1,11 @@
 <template>
-    <nav class="navbar sticky-top navbar-dark navbar-expand-lg col-12">
+    <nav class="navbar position-fixed navbar-dark navbar-expand-lg col-12">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         
         <a class="navbar-brand" href="#">
-            <img src="../../../assets/images/logo.png" width="90" alt="">
+            <img src="../../../assets/images/logo.png" class="logo" alt="">
         </a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">

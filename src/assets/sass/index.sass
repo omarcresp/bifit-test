@@ -1,13 +1,27 @@
 @import 'bootstrap/scss/bootstrap.scss'
 
-$fb-primary: #7ab020
-$fb-secondary: #0000bb
-$fb-acent: #ffc400
+$fb-primary: #9AEF09
+$fb-primary-dark: #6DAD00
+$fb-primary-ligth: #B2F443
 
-$fb-black: #000000
-$fb-darkgray: #4d4d4e
-$fb-gray: #d3d3d3
-$fb-white: #ffffff
+$fb-secondary: #1364B3
+$fb-secondary-dark: #09427A
+$fb-secondary-ligth: #4287C9
+
+$fb-acent: #FFC509
+$fb-acent-dark: #BB8F00
+$fb-acent-ligth: #FFD446
+
+$fb-complement: #D80872
+$fb-complement-dark: #9A004E
+$fb-complement-ligth: #E43E92
+
+$fb-darkgray: #4d4d4d
+$fb-gray: #d4d4d4
+
+body
+    background-color: gainsboro
+    overflow-x: hidden
 
 .btn-c2a
     background-color: $fb-acent
@@ -30,20 +44,42 @@ $fb-white: #ffffff
     padding: 6px 30px
 
 .fb-btn-secondary:hover
-    color: lightgray
+    color: white
 
 .fb-btn-secondary:focus
     box-shadow: unset
 
+.fb-btn-complement
+    background-color: $fb-complement
+    font-weight: bolder
+    color: white
+    border-radius: 10px
+    padding: 6px 30px
+
+.fb-btn-complement:hover
+    color: white
+
+.fb-btn-complement:focus
+    box-shadow: unset
+
 .text-14-px
-    font-size: 14px
+    font-size: 0.875rem
 
 .text-24-px
-    font-size: 24px
+    font-size: 1.5rem
+
+.position-abosulte
+    position: absolute
 
 .bg-secondary
     background-color: $fb-secondary !important
     color: white !important
+
+.t-d-primary
+    color: $fb-primary-dark !important
+
+.t-l-primary
+    color: $fb-primary-ligth !important
 
 .t-primary
     color: $fb-primary !important
@@ -51,7 +87,39 @@ $fb-white: #ffffff
 .t-darkgray
     color: $fb-darkgray !important
 
+.t-secondary
+    color: $fb-secondary !important
+
+.t-complement
+    color: $fb-complement !important
+
+.t-d-complement
+    color: $fb-complement-dark !important
+
+.t-acent
+    color: $fb-acent !important
+
 .full-center
     display: flex
     justify-content: center
     align-items: center
+
+.hr-complement
+    border-color: #D8087255
+
+.logo
+    width: 7vw
+    min-width: 50px
+    cursor: pointer
+
+@media (max-width: 575.98px)
+    html
+        font-size: 10px
+
+@media (min-width: 1959.98px)
+    html
+        font-size: 24px
+
+    .header-img
+        width: unset
+        margin-top: 100px

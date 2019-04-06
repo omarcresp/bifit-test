@@ -52,12 +52,12 @@ const config: Configuration = {
               importLoaders: 1,
             },
           },
-          // {
-          //   loader: 'postcss-loader',
-          //   options: {
-          //     sourceMap: true,
-          //   },
-          // },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
           {
             loader: 'sass-loader',
             options: {
@@ -88,12 +88,25 @@ const config: Configuration = {
   devServer: {
     historyApiFallback: true,
   },
+  optimization: {
+    runtimeChunk: 'multiple',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /node_modules/,
+          chunks: 'initial',
+          name: 'vendors',
+          enforce: true,
+        },
+      },
+    },
+  },
 };
 
 if (process.env.NODE_ENV === 'production') {
   config.mode = 'production';
   config.plugins.push(new MiniCssExtractPlugin({
-    filename: 'style.css',
+    filename: 'style-[contenthash].css',
   }));
   config.plugins.push(new CompressionWebpackPlugin({
     test: [
