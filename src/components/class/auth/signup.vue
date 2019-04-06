@@ -40,7 +40,7 @@
                 </div>
             </div>
 
-            <button class="btn fb-btn-secondary mt-3 d-block ml-auto">RESGISTRATE</button>
+            <button class="btn fb-btn-secondary mt-3 d-block ml-auto" @click="$router.push('reserve')">RESGISTRATE</button>
         </div>
     </div>
 </template>

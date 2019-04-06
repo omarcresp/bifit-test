@@ -16,7 +16,7 @@
                     <input v-model="pass" type="password" class="form-control col-12" id="password">
                 </div>
             </div>
-            <button class="btn fb-btn-secondary mt-3" @click="ready">INICIAR SESIÓN</button>
+            <button class="btn fb-btn-secondary mt-3" @click="$router.push('reserve')">INICIAR SESIÓN</button>
         </div>
     </div>
 </template>
@@ -24,14 +24,7 @@
  <script lang="ts">
  import Vue from 'vue';
  export default Vue.extend({
-     methods: {
-        ready () {
-            if (!(this.mail && this.pass)) return;
-
-            this.$router.push('class');
-        },
-     },
-     data () {
+    data () {
         return {
             mail: '',
             pass: '',

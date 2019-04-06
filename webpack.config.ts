@@ -52,12 +52,12 @@ const config: Configuration = {
               importLoaders: 1,
             },
           },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
+          // {
+          //   loader: 'postcss-loader',
+          //   options: {
+          //     sourceMap: true,
+          //   },
+          // },
           {
             loader: 'sass-loader',
             options: {
