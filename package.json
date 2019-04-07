@@ -7,6 +7,7 @@
     "start": "TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" NODE_ENV=\"development\" webpack-dev-server",
     "build": "TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" NODE_ENV=\"production\" webpack",
     "build:dev": "TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" NODE_ENV=\"development\" webpack",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "test": "echo \"No test configured yet\""
   },
   "dependencies": {
@@ -38,6 +39,7 @@
     "popper.js": "^1.14.7",
     "postcss": "^7.0.14",
     "postcss-loader": "^3.0.0",
+    "push-dir": "^0.4.1",
     "sass-loader": "^7.1.0",
     "sugarss": "^2.0.0",
     "ts-loader": "^5.3.3",

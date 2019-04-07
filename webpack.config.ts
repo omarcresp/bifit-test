@@ -31,7 +31,6 @@ const config: Configuration = {
         use: [
           {
             loader: 'file-loader',
-            options: {},
           },
         ],
       },
